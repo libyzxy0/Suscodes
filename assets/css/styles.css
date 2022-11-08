@@ -1,1 +1,176 @@
+:root {
+    --color: #4281F4;
 
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: hsl(0, 0%, 22%);
+  margin: 16px 0;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #19191A;
+    font-family: 'Poppins', sans-serif;
+}
+.nav {
+    background-color: #19191A;
+    box-shadow: 0 8px 20px hsla(0, 0%, 0%, 0.25);
+    position: fixed;
+    top: 0;
+    height: 3rem;
+    width: 100%;
+    z-index: 1;
+}
+.nav img {
+    width: 10rem;
+    padding: 2px 0;
+}
+.home {
+    padding-top: 3rem;
+    width: 100%;
+}
+
+.home .i_bar {
+   margin-top: 8rem;
+   text-align: center;
+}
+.home .i_bar form input[type=text] {
+    border: none;
+    outline: none;
+    height: 2.5rem;
+    width: 75%;
+    padding-left: 1rem;
+    padding-right: 5rem;
+    background-color: #19191A;
+    border-radius: 20px;
+    color: white;
+    border: 0.3px solid hsl(0, 0%, 22%);
+    transition: 0.3s;
+    font-weight: 500;
+}
+.home .i_bar form input[type=text]:focus, .home .search_bar form input[type=text]:hover {
+    box-shadow: 0 4px 6px var(--color);
+}
+.home .i_bar form input[type=text]::placeholder {
+    color: hsl(0, 0%, 22%);
+}
+.home .i_bar form .s_btn {
+    position: absolute;
+    background: transparent;
+    padding: 8px 17px;
+    margin: 3.4px 0;
+    border-radius: 20px;
+    right: 0;
+    margin-right: 13.6%;
+    border: 0.3px solid hsl(0, 0%, 22%);
+    transition: 0.3s;
+    color: white;
+    font-weight: 500;
+}
+.home .i_bar form .s_btn:hover {
+    cursor: pointer;
+}
+.info {
+    text-align: center;
+    margin-top: 8rem;
+}
+.info h3 {
+     color: var(--color);
+}
+.info p {
+    color: yellow;
+    margin: 10px 20px;
+}
+.m-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #19191A;
+    z-index: 2;
+    display: none;
+}
+.m-modal .dpy_img {
+    width: 15rem;
+    margin: auto;
+    margin: 10rem 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px hsla(0, 0%, 0%, 0.25);
+    border: 2px solid hsl(0, 0%, 22%);
+}
+.close_btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 17px;    
+    border: 0.5px solid hsl(0, 0%, 22%);
+    background: var(--color);
+    border-radius: 0px 0px 20px 0px;
+    color: white;
+    font-weight: 500;
+}
+.a-modal-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 17px;
+    border: 0.5px solid hsl(0, 0%, 22%);
+    background: transparent;
+    border-radius: 20px;
+    margin: 8px 10px;
+    color: white;
+    font-weight: 500;
+}
+.a-modal-btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 17px;
+    border: 0.5px solid hsl(0, 0%, 22%);
+    background: var(--color);
+    border-radius: 20px;
+    margin: 8px 10px;
+    color: white;
+    font-weight: 500;
+    display: none;
+}
+.a-modal {
+    position: fixed;
+    top: 0;
+    margin: auto;
+    background-color: #19191A;
+    box-shadow: 0 8px 20px hsla(0, 0%, 0%, 0.25);
+    position: fixed;
+    height: 25rem;
+    width: 20rem;
+    z-index: 2;
+    margin-top: 8rem;
+    border-radius: 14px;
+    color: white;
+    border: 0.5px solid hsl(0, 0%, 22%);
+    text-align: center;
+    display: none;
+}
+.a-modal h1 {
+    margin-top: 1rem;
+    color: var(--color);
+}
+.a-modal p {
+    margin: 1rem 2rem;
+}
+/* Made with Jan Liby Dela Costa(libyzxy0). */
